@@ -20,9 +20,12 @@ const images = [
 
 const imagesGallery = document.querySelector('#gallery');
 
-images.forEach(el => {
-  const galleryItem = document.createElement('li')
-  imagesGallery.appendChild(galleryItem)
-  galleryItem.insertAdjacentHTML('afterbegin', `<img class ='image' src = ${el.url} alt=${el.alt}>`);
+const itemsGallery = images.map(el => {
+
+  const itemGallery = document.createElement('li');
+  itemGallery.insertAdjacentHTML('afterbegin', `<img class ='image' alt='${el.alt}' src = '${el.url}' >`);
+  return itemGallery;
+
 })
 
+imagesGallery.append(...itemsGallery);
