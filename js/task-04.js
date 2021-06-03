@@ -9,12 +9,12 @@ let valueCounter = 1;
 
 function decrement() {
     count.textContent = `${valueCounter}`;
-    return valueCounter -= 1;
+     valueCounter -= 1;
 }
 
 function increment() {
     count.textContent = `${valueCounter}`;
-    return valueCounter += 1; 
+     valueCounter += 1; 
 }
 
 

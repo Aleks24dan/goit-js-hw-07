@@ -16,16 +16,6 @@ const images = [
   },
 ];
 
-
-
-const imagesGallery = document.querySelector('#gallery');
-
-const itemsGallery = images.map(el => {
-
-  const itemGallery = document.createElement('li');
-  itemGallery.insertAdjacentHTML('afterbegin', `<img class ='image' alt='${el.alt}' src = '${el.url}' >`);
-  return itemGallery;
-
-})
-
-imagesGallery.append(...itemsGallery);
+const Gallery = document.querySelector('#gallery');
+const itemsGallery = images.map(el => `<img class ='image' alt='${el.alt}' src = '${el.url}' >`).join('');
+Gallery.insertAdjacentHTML('afterbegin',itemsGallery);

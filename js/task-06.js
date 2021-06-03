@@ -10,10 +10,9 @@ function validation(event) {
 
         validationInput.classList.add('valid')
         validationInput.classList.remove('invalid')
-    } if (inputLength != atributLength) {
+    } else { 
 
-        validationInput.classList.add('invalid')
-       validationInput.classList.remove('valid')
-    }
+    validationInput.classList.add('invalid')
+    validationInput.classList.remove('valid')
 }
-//  validationInput.classList.remove('invalid')
+}
