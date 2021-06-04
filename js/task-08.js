@@ -17,7 +17,7 @@ function onCreatElBtn() {
     })
 
     boxesEl.append(...arrElements)
-    console.log(inpValue)
+  
     arrElements.forEach((div, i) => {
         i = 1;
         w += i * 10;
@@ -33,6 +33,6 @@ function onCreatElBtn() {
 function onDestroyElBtn() {
     boxesEl.innerHTML = '';
     inputElement.value = '';    
-
+    w = 0;
 }
 
